@@ -11,6 +11,14 @@ export default JSONAPISerializer.extend({
         attributes: {
           text: tweetData.text,
           createdAt: tweetData.createdAt
+        },
+        relationships: {
+          user: {
+            data: {
+              type: 'user',
+              id: tweetData.user
+            }
+          }
         }
       };
     });
