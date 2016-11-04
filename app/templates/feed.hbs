@@ -4,8 +4,6 @@
 
 <ul class="media-list" style={{styles.tweets}}>
   {{#each model.tweets.data as |tweet|}}
-    <li>
-      {{tweet.data.text}}
-    </li>
+    {{tweet-item tweet=tweet}}
   {{/each}}
 </ul>
