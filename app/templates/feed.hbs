@@ -3,7 +3,7 @@
 </h2>
 
 <ul class="media-list" style={{styles.tweets}}>
-  {{#each model.tweets.data as |tweet|}}
+  {{#each model.tweets as |tweet|}}
     {{tweet-item tweet=tweet}}
   {{/each}}
 </ul>
