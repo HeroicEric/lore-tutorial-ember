@@ -2,14 +2,14 @@
   <div style={{styles.imageContainer}}>
     <img
       class="img-circle"
-      src="http://ssl.gstatic.com/images/icons/material/product/1x/avatar_circle_blue_120dp.png"
+      src={{user.data.avatar}}
       style={{styles.avatar}}
     />
   </div>
 
   <div style={{styles.contentContainer}}>
     <h4 class="list-group-item-heading" style={{styles.title}}>
-      Nickname
+      {{user.data.nickname}}
     </h4>
 
     <h4 class="list-group-item-heading" style={{styles.timestamp}}>
